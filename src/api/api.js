@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-  baseURL: 'https://back-tapdog.denevijw.beget.tech'
+  baseURL: import.meta.env.VITE_BASE_API_URL
 })
 
 api.interceptors.request.use(

@@ -3,8 +3,8 @@ import { onMounted, ref } from 'vue'
 import { RouterView } from 'vue-router'
 import AccessDenied from '@/components/AccessDenied.vue'
 
-const blockVerticalScrollApp = (isBlock) => {
-  const offset = isBlock ? 100 : 0
+const blockVerticalScrollApp = () => {
+  const offset = 100
 
   document.body.style.marginTop = `${offset}px`
   document.body.style.paddingBottom = `${offset}px`
@@ -20,8 +20,8 @@ const deviceCheck = () => {
 
 onMounted(() => {
   deviceCheck()
+  blockVerticalScrollApp()
   window.Telegram.WebApp.expand()
-  blockVerticalScrollApp(true)
 })
 </script>
 

@@ -1,7 +1,7 @@
 <script setup>
 defineProps({
   energy: Number,
-  maxEnergy: Number,
+  maxEnergy: Number
 })
 </script>
 
@@ -55,7 +55,6 @@ defineProps({
       position: absolute;
       left: 0;
       top: 0;
-      //width: 40%;
       height: 100%;
       border-radius: 55px;
       background: linear-gradient(90deg, #0A1124 -6.34%, #858D50 31.3%, #E6F38A 72.35%, #FFFFFF 100%);
