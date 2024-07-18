@@ -1,0 +1,42 @@
+@import "variables";
+
+html {
+  height: var(--tg-viewport-height, 100vh);
+  overscroll-behavior: none;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  user-select: none;
+  --webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  background-color: var(--brand-color);
+  color: #fff;
+  overscroll-behavior: none;
+  overflow: hidden;
+}
+
+#root {
+  height: var(--tg-viewport-height, 100vh);
+  overflow: auto;
+}
+
+button, input, textarea {
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
